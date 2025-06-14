@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mantasha Idrisi | Prompt Engineer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: url('https://images.unsplash.com/photo-1611926653458-09294b3142e5') no-repeat center center fixed;
+      background-size: cover;
+      color: #e0e0e0;
+    }
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: rgba(25, 0, 60, 0.9);
+      backdrop-filter: blur(10px);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #a78bfa;
+      cursor: pointer;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: rgba(36, 0, 70, 0.5);
+      padding: 1rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+    nav span {
+      cursor: pointer;
+      color: #bcbdfc;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav span:hover {
+      color: #ffffff;
+    }
+    section {
+      display: none;
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+      animation: fadeIn 0.5s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    h2 {
+      color: #81ecec;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .card {
+      background: rgba(30, 31, 59, 0.85);
+      padding: 1rem;
+      border-radius: 1rem;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 0 10px rgba(130, 88, 240, 0.4);
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(130, 88, 240, 0.7);
+    }
+    .card a {
+      text-decoration: none;
+      color: #a29bfe;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #ccc;
+      background-color: rgba(15, 15, 46, 0.9);
+    }
+  </style>
+</head>
+<body>
+  <header onclick="showSection('about')">
+    <h1>Mantasha Idrisi</h1>
+  </header>
+  <nav>
+    <span onclick="showSection('about')">About</span>
+    <span onclick="showSection('education')">Education</span>
+    <span onclick="showSection('projects')">Projects</span>
+    <span onclick="showSection('certifications')">Certifications</span>
+    <span onclick="showSection('internships')">Internships</span>
+    <span onclick="showSection('contact')">Contact</span>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>Hi! I'm Mantasha Idrisi, a fast-learning MCA (AI/ML) graduate passionate about AI-powered solutions, prompt engineering, and building useful tools with minimal code. I love designing smart chatbots and analytical dashboards that solve real-world problems. I use tools like Flowise, LangChain, ChatGPT, Jupyter Notebook, and VS Code.</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="cards">
+      <div class="card"><strong>Uttaranchal University</strong><br/>MCA (AI & ML), 2023–2025</div>
+      <div class="card"><strong>University of Lucknow</strong><br/>BCA, 2019–2022</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="cards">
+      <div class="card"><a href="https://huggingface.co/spaces/IMantasha/Medisense" target="_blank">MediSense – AI Medical Chatbot</a></div>
+      <div class="card"><a href="https://huggingface.co/spaces/IMantasha/gemini-interview-prep" target="_blank">Gemini Interview Prep</a></div>
+      <div class="card"><a href="https://huggingface.co/spaces/IMantasha/Mini-Prompt-App" target="_blank">Mini Prompt App</a></div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications & Badges</h2>
+    <div class="cards">
+      <div class="card"><a href="https://courses.cognitiveclass.ai/certificates/13f58d35420d4453acffaecd2f0c73ca" target="_blank">IBM Python for Data Science</a></div>
+      <div class="card"><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/YtWaumzWHmKiqP63y/zSefEeEKvojiQqiaH_YtWaumzWHmKiqP63y_vRQK7WdEcEgkp8SQz_1745908131333_completion_certificate.pdf" target="_blank">Siemens Project Manager Job Simulation</a></div>
+      <div class="card"><a href="https://www.credly.com/badges/b35eee7d-dae8-4d59-b847-f71ebf2fa47b/linked_in_profile" target="_blank">Prompt Design in Vertex AI Badge</a></div>
+      <div class="card"><a href="https://www.credly.com/badges/11ff7589-64b7-4c8c-ba95-cb6cfb926bb1/linked_in_profile" target="_blank">Gemini & Imagen Skill Badge</a></div>
+      <div class="card"><a href="https://www.cloudskillsboost.google/public_profiles/174f025f-a606-4a45-be2b-b50f461dc038/badges/8258043?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" target="_blank">Introduction to Generative AI</a></div>
+    </div>
+  </section>
+
+  <section id="internships">
+    <h2>Internships</h2>
+    <div class="cards">
+      <div class="card"><strong>Machine Learning Intern – CodSoft</strong><br/>Preprocessed real-world datasets and implemented basic ML models</div>
+      <div class="card"><strong>Data Science Intern – Digipodium</strong><br/>Created visualizations and built predictive models using Python libraries</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact & Links</h2>
+    <div class="cards">
+      <div class="card"><strong>Email:</strong><br/><a href="mailto:mantashaidrisi17@gmail.com">mantashaidrisi17@gmail.com</a></div>
+      <div class="card"><strong>Phone:</strong><br/>+91-9305778464</div>
+      <div class="card"><strong>LinkedIn:</strong><br/><a href="https://linkedin.com/in/mantasha-idrisi-57656b1b3" target="_blank">linkedin.com/in/mantasha-idrisi</a></div>
+      <div class="card"><strong>GitHub:</strong><br/><a href="https://github.com/imantasha" target="_blank">github.com/imantasha</a></div>
+      <div class="card"><strong>Portfolio:</strong><br/><a href="https://imantasha.github.io/Portfolio" target="_blank">View More</a></div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Mantasha Idrisi | AI/ML & Prompt Engineering Portfolio
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(sec => sec.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+    showSection('about');
+  </script>
+</body>
+</html>
